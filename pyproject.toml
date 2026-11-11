@@ -1,0 +1,7 @@
+[project]
+name = "routedmemory"
+version = "0.1.0"
+description = "Implementation test of Routed Continual Learning (arXiv:2610.38796): clustered persistent memory with routed retrieval, accuracy vs context cost."
+requires-python = ">=3.10"
+license = {text = "MIT"}
+dependencies = []
