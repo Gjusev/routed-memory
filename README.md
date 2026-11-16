@@ -14,10 +14,10 @@
 
 <p align="center">
   <a href="assets/video/routed-memory.mp4">
-    <img src="assets/video/preview.gif" alt="A query dot travels a curved route into one of four memory clusters; only the target cluster lights up" width="720">
+    <img src="assets/video/preview.gif" alt="routed-memory: the animated mark beside the headline number, −74% context scanned vs a flat memory pool" width="720">
   </a>
   <br>
-  <sub><a href="assets/video/routed-memory.mp4">Watch the 8-second film (MP4, 0.1 MB)</a>. Every number in it comes from the committed results in this repo.</sub>
+  <sub><a href="assets/video/routed-memory.mp4">Watch the 8-second film (MP4, 0.2 MB)</a>. Every number in it comes from the committed results in this repo.</sub>
 </p>
 
 Implementation test of [Routed Continual Learning](https://arxiv.org/abs/2610.38796)
