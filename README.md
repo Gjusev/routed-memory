@@ -1,5 +1,10 @@
 # routed-memory
 
+[![tests](https://github.com/Gjusev/routed-memory/actions/workflows/tests.yml/badge.svg)](https://github.com/Gjusev/routed-memory/actions/workflows/tests.yml)
+[![dependencies](https://img.shields.io/badge/dependencies-0-success)]()
+[![python](https://img.shields.io/badge/python-3.10%2B-blue)]()
+[![License: MIT](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
+
 Implementation test of [Routed Continual Learning](https://arxiv.org/abs/2610.38796)
 (Meta FAIR): route incoming memories into clusters instead of growing one flat
 pool, then retrieve only from the relevant cluster. The paper reports similar
@@ -42,7 +47,7 @@ print(f"scanned {result.scanned} of {result.full_pool_size} memories")
 ```
 
 ```bash
-python3 -m pytest tests/   # offline, zero dependencies
+python -m unittest   # offline, zero dependencies, runs on Linux/macOS/Windows
 ```
 
 ## Real deployment notes
@@ -56,10 +61,19 @@ python3 -m pytest tests/   # offline, zero dependencies
 
 ## Next steps
 
-- Embedding backend (local GGUF embedder) behind the same interface
-- Forgetting policy per cluster (TTL, dedupe)
-- Benchmark against a flat pool with a real LLM judge instead of substring
-  matching
+See [ROADMAP.md](ROADMAP.md) — next up: an embedding backend (local GGUF
+embedder) behind the same interface, a forgetting policy per cluster, and a
+stronger benchmark. [CONTINUE.md](CONTINUE.md) has the handoff rules for
+coding agents picking this up.
+
+## Repository layout
+
+```
+routedmemory/   MemoryItem, MemoryClusters, routing + retrieval, offline bench
+tests/          offline unit tests (python -m unittest, zero dependencies)
+ROADMAP.md      ordered next steps
+CONTINUE.md     agent handoff: working rules + STOP points
+```
 
 ## Citation
 
