@@ -1,0 +1,16 @@
+cff-version: 1.2.0
+message: "If you use this software, please cite it as below."
+title: "routed-memory: clustered persistent memory with routed retrieval"
+authors:
+  - family-names: Ouhaghi
+    given-names: Youssef
+type: software
+version: 0.1.0
+date-released: "2026-11-16"
+license: MIT
+repository-code: "https://github.com/Gjusev/routed-memory"
+keywords:
+  - llm-agents
+  - benchmark
+  - offline
+  - zero-dependencies

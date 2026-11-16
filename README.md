@@ -5,6 +5,21 @@
 [![python](https://img.shields.io/badge/python-3.10%2B-blue)]()
 [![License: MIT](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
 
+<p align="center">
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="assets/logo/logo-animated-dark.svg">
+    <img src="assets/logo/logo-animated-light.svg" alt="routed-memory: a query is routed to one cluster; only that cluster wakes" width="560">
+  </picture>
+</p>
+
+<p align="center">
+  <a href="assets/video/routed-memory.mp4">
+    <img src="assets/video/preview.gif" alt="A query dot travels a curved route into one of four memory clusters; only the target cluster lights up" width="720">
+  </a>
+  <br>
+  <sub><a href="assets/video/routed-memory.mp4">Watch the 8-second film (MP4, 0.1 MB)</a>. Every number in it comes from the committed results in this repo.</sub>
+</p>
+
 Implementation test of [Routed Continual Learning](https://arxiv.org/abs/2610.38796)
 (Meta FAIR): route incoming memories into clusters instead of growing one flat
 pool, then retrieve only from the relevant cluster. The paper reports similar
@@ -71,6 +86,7 @@ coding agents picking this up.
 ```
 routedmemory/   MemoryItem, MemoryClusters, routing + retrieval, offline bench
 tests/          offline unit tests (python -m unittest, zero dependencies)
+assets/         animated logo + launch film (SVG, MP4, GIF)
 ROADMAP.md      ordered next steps
 CONTINUE.md     agent handoff: working rules + STOP points
 ```
